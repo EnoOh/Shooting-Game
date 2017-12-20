@@ -13,6 +13,7 @@ public class PlayerMove : MonoBehaviour {
 	}
 	
 	void Update () {
+        //キャラ移動
         if (Input.GetKey(KeyCode.RightArrow))
         {
             direction = 1f;
