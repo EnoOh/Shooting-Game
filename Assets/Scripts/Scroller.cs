@@ -10,7 +10,7 @@ public class Scroller : MonoBehaviour {
 
     private void FixedUpdate()
     {
-        transform.Translate(0, -0.1f, 0);
+        transform.Translate(0, -0.05f, 0);
         if (transform.position.y < -10.6f)
         {
             transform.position = new Vector3(0, 10.6f, 0);
