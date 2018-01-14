@@ -442,7 +442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca354b6c30af494d98f3455348d1351, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 1361434640183838, guid: 26c4455038ddb1941bc99f6a01de92a2, type: 2}
+  weapon: {fileID: 1633810189396230, guid: 517aa94bd0a5191429f96ac08ede0422, type: 2}
 --- !u!212 &2050718231
 SpriteRenderer:
   m_ObjectHideFlags: 0
