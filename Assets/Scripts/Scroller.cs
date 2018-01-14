@@ -8,8 +8,7 @@ public class Scroller : MonoBehaviour {
 		
 	}
 
-    private void FixedUpdate()
-    {
+    private void FixedUpdate() {
         transform.Translate(0, -0.05f, 0);
         if (transform.position.y < -10.6f)
         {
