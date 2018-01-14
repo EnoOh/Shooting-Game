@@ -11,6 +11,10 @@ public class WeaponController : MonoBehaviour {
 	}
 	
 	void Update () {
-		
+		if(transform.position.y > 5.0f)
+        {
+            //弾が上端まで来たら弾を消滅させる
+            Destroy(gameObject);
+        }
 	}
 }
