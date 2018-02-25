@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 61979387161352686}
   - component: {fileID: 114927658446002884}
   m_Layer: 0
-  m_Name: Weapon
+  m_Name: NormalShot
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1361434640183838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.019, y: -3.465, z: 0}
+  m_LocalPosition: {x: 0.019, y: -0.06499939, z: 0}
   m_LocalScale: {x: 0.15, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a0b854058b470d4297117c719f70e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  weaponSpeed: 0.2
 --- !u!212 &212290653330547510
 SpriteRenderer:
   m_ObjectHideFlags: 1

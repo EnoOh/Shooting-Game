@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a0b854058b470d4297117c719f70e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  weaponSpeed: 0
 --- !u!114 &114370903349274004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a0b854058b470d4297117c719f70e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  weaponSpeed: 0
 --- !u!114 &114706754383689076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -297,7 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a0b854058b470d4297117c719f70e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  weaponSpeed: 0
 --- !u!114 &114824771159666198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -309,7 +309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a0b854058b470d4297117c719f70e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  weaponSpeed: 0
 --- !u!212 &212209715490992466
 SpriteRenderer:
   m_ObjectHideFlags: 1
