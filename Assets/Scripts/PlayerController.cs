@@ -6,6 +6,10 @@ public class PlayerController : MonoBehaviour {
 
     [SerializeField]
     GameObject weaponPrefab;
+    [SerializeField]
+    GameObject normalShot;
+    [SerializeField]
+    GameObject tripleShot;
 
     WeaponController weaponController;
 
@@ -32,6 +36,10 @@ public class PlayerController : MonoBehaviour {
         {
             Instantiate(weaponPrefab, transform.position, Quaternion.identity);
             weaponPrefab.transform.Translate(0, 0.2f, 0);
+        }
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            weaponPrefab = tripleShot;
         }
     }
 
