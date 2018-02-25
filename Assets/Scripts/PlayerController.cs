@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour {
     void Clamp()
     {
         Vector2 playerPos = transform.position;
-        playerPos.x = Mathf.Clamp(playerPos.x, -2.7f, 2.7f);
+        playerPos.x = Mathf.Clamp(playerPos.x, -4.5f, 4.5f);
         transform.position = new Vector2(playerPos.x, playerPos.y);
     }
 }
