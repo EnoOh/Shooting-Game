@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
     [SerializeField]
-    GameObject weapon;
+    GameObject weaponPrefab;
 
     WeaponController weaponController;
 
@@ -30,8 +30,8 @@ public class PlayerController : MonoBehaviour {
         //スペースキーで弾を撃つ
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(weapon, transform.position, Quaternion.identity);
-            weapon.transform.Translate(0, 0.2f, 0);
+            Instantiate(weaponPrefab, transform.position, Quaternion.identity);
+            weaponPrefab.transform.Translate(0, 0.2f, 0);
         }
     }
 
