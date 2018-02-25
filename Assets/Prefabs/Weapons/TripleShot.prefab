@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114370903349274004}
   - component: {fileID: 50829741295107510}
   - component: {fileID: 61150665796134966}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RightWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 4132898431553554}
   - component: {fileID: 114706754383689076}
   - component: {fileID: 50721780724084140}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TripleShot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 114824771159666198}
   - component: {fileID: 50841124433180726}
   - component: {fileID: 61885111117827704}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CenterWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   - component: {fileID: 114287775927561978}
   - component: {fileID: 50165747432954394}
   - component: {fileID: 61667480149568336}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LeftWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1633810189396230}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.019, y: -3.465, z: 0}
+  m_LocalPosition: {x: 0.019, y: -1.2649994, z: 0}
   m_LocalScale: {x: 0.15, y: 0.2, z: 1}
   m_Children:
   - {fileID: 4126540901954302}
@@ -273,7 +273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a0b854058b470d4297117c719f70e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponSpeed: 0
+  weaponSpeed: 0.2
 --- !u!114 &114370903349274004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a0b854058b470d4297117c719f70e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponSpeed: 0
+  weaponSpeed: 0.2
 --- !u!114 &114706754383689076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -297,7 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a0b854058b470d4297117c719f70e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponSpeed: 0
+  weaponSpeed: 0.2
 --- !u!114 &114824771159666198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -309,7 +309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a0b854058b470d4297117c719f70e69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponSpeed: 0
+  weaponSpeed: 0.2
 --- !u!212 &212209715490992466
 SpriteRenderer:
   m_ObjectHideFlags: 1

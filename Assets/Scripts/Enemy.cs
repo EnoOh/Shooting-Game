@@ -3,28 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour {
-    //敵の速度
-    public float enemySpeed;
-    //敵が弾を撃つ間隔
-    public float shotDelay;
-    //敵の弾
-    public GameObject enemyBullet;
 
+    EnemyBase enemyBase;
+	
 	void Start () {
-        
+        enemyBase = GetComponent<EnemyBase>();
+        enemyBase.Move(transform.right * -1);
 	}
 	
 	void Update () {
 		
 	}
 
-    public void Shot()
+    private void OnTriggerEnter2D(Collider2D c)
     {
-
-    }
-
-    public void Move()
-    {
-
+        string layerName = LayerMask.LayerToName(c.gameObject.layer);
+        if (layerName != "Bullet") return;
+        Destroy(c.gameObject);
+        Destroy(gameObject);
     }
 }
