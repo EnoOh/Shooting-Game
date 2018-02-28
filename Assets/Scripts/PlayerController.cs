@@ -10,15 +10,19 @@ public class PlayerController : MonoBehaviour {
     GameObject normalShot;
     [SerializeField]
     GameObject tripleShot;
+    [SerializeField]
+    float changeLimit;
+    float changeTime;
+    bool isChangeWeapon;
 
     WeaponController weaponController;
 
     void Start()
     {
-
+        isChangeWeapon = false;
     }
 
-    void Update() {
+    void Update() {        
         //左右キーでプレイヤーの移動
         if (Input.GetKey(KeyCode.LeftArrow))
         {
@@ -37,9 +41,22 @@ public class PlayerController : MonoBehaviour {
             Instantiate(weaponPrefab, transform.position, Quaternion.identity);
             weaponPrefab.transform.Translate(0, 0.2f, 0);
         }
+        //Zキーで武器変更
         if (Input.GetKeyDown(KeyCode.Z))
         {
             weaponPrefab = tripleShot;
+            isChangeWeapon = true;
+        }
+
+        if (isChangeWeapon)
+        {
+            changeTime += Time.deltaTime;
+        }
+        if (changeLimit <= changeTime)
+        {
+            weaponPrefab = normalShot;
+            changeTime = 0;
+            isChangeWeapon = false;
         }
     }
 

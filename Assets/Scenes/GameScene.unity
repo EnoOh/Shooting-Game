@@ -120,6 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - {fileID: 1937156954336642, guid: 71aa5a39870a32e4bb1fc89b85be0b2e, type: 2}
+  - {fileID: 1937156954336642, guid: 107871f48d3aa4446aa52e0787603ea4, type: 2}
 --- !u!4 &168475731
 Transform:
   m_ObjectHideFlags: 0
@@ -486,6 +487,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 1361434640183838, guid: 26c4455038ddb1941bc99f6a01de92a2,
     type: 2}
+  normalShot: {fileID: 1361434640183838, guid: 26c4455038ddb1941bc99f6a01de92a2, type: 2}
+  tripleShot: {fileID: 1633810189396230, guid: 517aa94bd0a5191429f96ac08ede0422, type: 2}
+  changeLimit: 5
 --- !u!212 &2050718231
 SpriteRenderer:
   m_ObjectHideFlags: 0
