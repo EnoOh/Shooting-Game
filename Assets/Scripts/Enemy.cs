@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour {
 
     EnemyBase enemyBase;
     [SerializeField]
-    int hp;
+    int hp;    
 	
 	void Start () {
         enemyBase = GetComponent<EnemyBase>();
@@ -23,8 +23,8 @@ public class Enemy : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D c)
     {
         hp--;
-        string layerName = LayerMask.LayerToName(c.gameObject.layer);
-        if (layerName != "Bullet") return;
+        string hitObj = LayerMask.LayerToName(c.gameObject.layer);
+        if (hitObj != LayerName.Bullet) return;
         Destroy(c.gameObject);
     }
 }
